@@ -1,12 +1,15 @@
 import express from 'express'
+import { productRoute } from "./routes/product-api";
 
-const app = express();
+const server = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
-  res.send('HelloWorld');
+server.get('/', (req, res) => {
+  res.send('Health check');
 });
 
-app.listen(port, () => console.log(`Listening on ${port}!`));
+server.use('/api/v1/products', productRoute);
 
-export { app };
+server.listen(port, () => console.log(`Listening on ${port}!`));
+
+export { server };
