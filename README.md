@@ -25,3 +25,6 @@ with the following <b>technologies</b>:
 ## Extras
 - Introduce IoC
 - Host on AWS EC2
+
+### Notes
+[How to structure node apps](https://stackoverflow.com/a/19724428)
