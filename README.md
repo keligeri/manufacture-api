@@ -24,6 +24,7 @@ with the following <b>technologies</b>:
 
 ## Extras
 - Introduce IoC
+- Docker image
 - Host on AWS EC2
 
 ### Notes
