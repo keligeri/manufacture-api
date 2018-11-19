@@ -4,7 +4,9 @@
   "description": "The purposes of this repo to practice NODE JS",
   "main": "./src/app.js",
   "scripts": {
-    "start": "node ./src/app.js"
+    "start": "node ./src/app.js",
+    "docker-build": "docker build -t manufacture-api -f docker/Dockerfile .",
+    "docker-run": "docker run -p 3000:3000 -d manufacture-api"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
